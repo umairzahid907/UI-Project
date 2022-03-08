@@ -17,8 +17,7 @@
     <div class="logo-box">
       <a class="brand-logo" href="">Furnish</a>
     </div>
-    <div class="nav-links" id="navLinks">
-      <i class="fa fa-times" onclick="hideMenu()"></i>
+    <div class="nav-links">
       <ul>
         <li><a href="">Home</a></li>
         <li><a href="">About</a></li>
@@ -27,7 +26,7 @@
         <li><a href="">Contact</a></li>
       </ul>
     </div>
-    <i class="fa fa-bars" onclick="showMenu()"></i>
+    <i class="fa fa-bars"></i>
   </nav>
   <div class="text-box">
     <h1>Best Design of </h1>
@@ -82,11 +81,11 @@
 			Far far away, behind the word mountains, far from the countries Vakalia
 			and Consonantia, there live the blind texts. Separated they live in
 			Bookmarksgrave right at the coast of the semantics, a large language ocean.
+			<div class="play-button">
+				<a href=""><img src="images/play-button.png" alt=""></a>
+				<p>Watch Video</p>
+			</div>
 		</p>
-		<div class="play-button">
-			<a href=""><img src="images/play-button.png" alt=""></a>
-			<p>Watch Video</p>
-		</div>
 	</div>
 
 </section>
@@ -151,7 +150,7 @@
 	<div class="jumbotron">
 		<p>TESTIMONIAL</p>
 	<h1>Happy Customers</h1>
-	<div class="row" id="slide-row">
+	<div class="row">
 		<div class="testimonial-col">
 			<div class="top-i">
 				<i class="fa fa-quote-left" aria-hidden="true"></i>
@@ -166,7 +165,7 @@
 					</div>
 			</div>
 		</div>
-		<div class="testimonial-col">
+		<div class="testimonial-col item-2">
 			<div class="top-i">
 				<i class="fa fa-quote-left" aria-hidden="true"></i>
 			</div>
@@ -180,7 +179,7 @@
 					</div>
 			</div>
 		</div>
-		<div class="testimonial-col">
+		<div class="testimonial-col item-3">
 			<div class="top-i">
 				<i class="fa fa-quote-left" aria-hidden="true"></i>
 			</div>
@@ -238,7 +237,6 @@
 	<div class="jumbotron">
 		<p>OUR BLOG</p>
 		<h1>Recent From Blog</h1>
-
 		<div class="blog-container">
 			<div class="box">
 				<div>
@@ -346,21 +344,6 @@
 		by <span>Colorlib</span></P>
 	</div>
 </section>
-<!------------JavaScript for Toggle Menu--------->
-<script>
-	var navLinks = document.getElementById("navLinks");
-	function showMenu(){
-		navLinks.style.right = "0px";
-	}
-	function hideMenu(){
-		navLinks.style.right = "-200px";
-	}
-	var slide = document.getElementById("testimonial-col")
-	function active(){
-		slide.style.transform = "translateX(-110%)"
-	}
-</script>
-<!------------ javascript fot button slide---------->
 
 </body>
 </html>
