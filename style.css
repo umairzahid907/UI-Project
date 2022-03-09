@@ -80,6 +80,18 @@ h1.bold{
 nav .fa{
   display: none;
 }
+/*---------- responsiveness ------------*/
+@media screen and (max-width: 260px){
+  .header{
+    height: 100vh;
+    background-size: 100%;
+  }
+}
+@media screen and (max-height: 400px){
+  .header{
+    height: 80vh;
+  }
+}
 @media screen and (max-width: 500px){
   .text-box h1{
     font-size: 20px;
@@ -93,7 +105,6 @@ nav .fa{
     cursor: pointer;
   }
 }
-/*---------- responsiveness ------------*/
 @media screen and (max-width: 600px) {
   h1{
     font-size: 20px;
@@ -230,7 +241,8 @@ nav .fa{
 }
 /*-------------- About furnish ----------*/
 .about-furnish{
-  height: 100vh;
+  min-height: 100vh;
+  display: block;
   background-image: url(images/xbg_4.webp);
   background-size: cover;
   background-position: center;
@@ -279,7 +291,7 @@ nav .fa{
 /*---------- responsiveness ------------*/
 @media screen and (max-width: 500px){
   .about-furnish {
-    height: 60vh;
+    min-height: 60vh;
     background-size: cover;
   }
   .top-padding{
@@ -313,6 +325,18 @@ nav .fa{
     padding-left: 20px;
   }
 }
+@media screen and (max-height: 400px){
+  .top-padding{
+    padding-top: 1%;
+  }
+  .play-button{
+    margin-top: 0;
+  }
+  .about-furnish{
+    background-size: cover;
+  }
+}
+
 /*---------- Furniture Collection---------*/
 .jumbotron{
   width: 100%;
