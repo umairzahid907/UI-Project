@@ -7,38 +7,47 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,600;0,900;1,600&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<!------------ Header ---------------------->
-<section class="header">
+
 	<nav>
     <div class="logo-box">
       <a class="brand-logo" href="">Furnish</a>
     </div>
     <div class="nav-links">
       <ul>
-        <li><a href="">Home</a></li>
+        <li><a href="" class="click">Home</a></li>
         <li><a href="">About</a></li>
         <li><a href="">Collection</a></li>
         <li><a href="">Blog</a></li>
         <li><a href="">Contact</a></li>
       </ul>
     </div>
-    <i class="fa fa-bars"></i>
+    <button class="nav-button">
+			<span class="fa fa-bars"></span>
+			MENU
+		</button>
   </nav>
+	<!------------ Header ---------------------->
+<section class="header">
+	<div class="overlay"></div>
+	<div class="img"></div>
   <div class="text-box">
-    <h1>Best Design of </h1>
-    <h1 class="bold">Furniture Collections</h1>
-    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-    <a href="" class="hero-btn">DISCOVER</a>
-  </div>
+		<h1 class>Best Design of
+			<span>Furniture Collections</span>
+		</h1>
+		<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+		<a href="" class="hero-btn">DISCOVER</a>
+	</div>
 
 </section>
 <!---------- Flex-box ------->
 <section class="flex-container">
-	<div class="flex-box1">
+	<div class="flex-box box1">
 		<img src="images/hand-shake.png" alt="Amazing deals">
 		<div>
 			<h3>Amazing Deals</h3>
@@ -46,7 +55,7 @@
 		</div>
 	</div>
 
-	<div class="flex-box2">
+	<div class="flex-box box2">
 		<img src="images/q-furniture.png" alt="Quality furniture">
 		<div>
 			<h3>Quality Furniture</h3>
@@ -54,7 +63,7 @@
 		</div>
 	</div>
 
-	<div class="flex-box3">
+	<div class="flex-box box3">
 		<img src="images/modern-chair.png" alt="Modern Design">
 		<div>
 			<h3>Modern Design</h3>
@@ -62,7 +71,7 @@
 		</div>
 	</div>
 
-	<div class="flex-box4">
+	<div class="flex-box box4">
 		<img src="images/cutomer-support.png" alt="Customer support">
 		<div>
 			<h3>Best Support</h3>
@@ -76,7 +85,7 @@
 <section class="about-furnish">
 	<div>
 		<p class="top-padding">ABOUT FURNISH</p>
-		<h2>Quality Makes the Belief for Customers</h2>
+		<h1>Quality Makes the Belief for Customers</h1>
 		<p>
 			Far far away, behind the word mountains, far from the countries Vakalia
 			and Consonantia, there live the blind texts. Separated they live in
@@ -97,23 +106,35 @@
 		<h1>Furniture Collection</h1>
 </div>
 	<div class="flex">
-		<div class="box">
-			<img src="images/gallery-1.webp" alt="">
+		<div class="box item1">
+			<div class="text">
+				<h2>Business Finance Consulting</h2>
+			</div>
 		</div>
-		<div class="box">
-			<img src="images/xgallery-2.webp" alt="">
+		<div class="box item2">
+			<div class="text">
+				<h2>Business Finance Consulting</h2>
+			</div>
 		</div>
-		<div class="box">
-			<img src="images/gallery-3.webp" alt="">
+		<div class="box w-50 item3">
+			<div class="text">
+				<h2>Business Finance Consulting</h2>
+			</div>
 		</div>
-		<div class="box">
-			<img src="images/xgallery-4.webp" alt="">
+		<div class="box w-50 item4">
+			<div class="text">
+				<h2>Business Finance Consulting</h2>
+			</div>
 		</div>
-		<div class="box">
-			<img src="images/xgallery-5.webp" alt="">
+		<div class="box item5">
+			<div class="text">
+				<h2>Business Finance Consulting</h2>
+			</div>
 		</div>
-		<div class="box">
-			<img src="images/xgallery-6.webp" alt="">
+		<div class="box item6">
+			<div class="text">
+				<h2>Business Finance Consulting</h2>
+			</div>
 		</div>
 	</div>
 </section>
@@ -239,8 +260,9 @@
 		<h1>Recent From Blog</h1>
 		<div class="blog-container">
 			<div class="box">
-				<div>
+				<div class="img">
 					<img src="images/ximage_1.webp">
+				</div>
 					<div class="blog-details">
 						<i class="fa fa-user"></i><span> ADMIN</span>
 						<i class="fa fa-calendar"></i><span>JAN 27,2021</span>
@@ -248,42 +270,41 @@
 						<h6>Shop the Lock Cottage Country Living Room</h6>
 						<p>A small river named Duden flows by their place.</p>
 					</div>
-				</div>
 			</div>
 			<div class="box">
-				<div>
+				<div class="img">
 					<img src="images/ximage_2.webp">
-					<div class="blog-details">
-						<i class="fa fa-user"></i><span> ADMIN</span>
-						<i class="fa fa-calendar"></i><span>JAN 27,2021</span>
-						<i class="fa fa-comment"><span>  3 COMMENTS</span></i>
-						<h6>Shop the Lock Cottage Country Living Room</h6>
-						<p>A small river named Duden flows by their place.</p>
-					</div>
+				</div>
+				<div class="blog-details">
+					<i class="fa fa-user"></i><span> ADMIN</span>
+					<i class="fa fa-calendar"></i><span>JAN 27,2021</span>
+					<i class="fa fa-comment"><span>  3 COMMENTS</span></i>
+					<h6>Shop the Lock Cottage Country Living Room</h6>
+					<p>A small river named Duden flows by their place.</p>
 				</div>
 			</div>
 			<div class="box">
-				<div>
+				<div class="img">
 					<img src="images/ximage_3.webp">
-					<div class="blog-details">
-						<i class="fa fa-user"></i><span> ADMIN</span>
-						<i class="fa fa-calendar"></i><span>JAN 27,2021</span>
-						<i class="fa fa-comment"><span>  3 COMMENTS</span></i>
-						<h6>Shop the Lock Cottage Country Living Room</h6>
-						<p>A small river named Duden flows by their place.</p>
-					</div>
+				</div>
+				<div class="blog-details">
+					<i class="fa fa-user"></i><span> ADMIN</span>
+					<i class="fa fa-calendar"></i><span>JAN 27,2021</span>
+					<i class="fa fa-comment"><span>  3 COMMENTS</span></i>
+					<h6>Shop the Lock Cottage Country Living Room</h6>
+					<p>A small river named Duden flows by their place.</p>
 				</div>
 			</div>
 			<div class="box">
-				<div>
+				<div class="img">
 					<img src="images/ximage_4.webp">
-					<div class="blog-details">
-						<i class="fa fa-user"></i><span> ADMIN</span>
-						<i class="fa fa-calendar"></i><span>JAN 27,2021</span>
-						<i class="fa fa-comment"><span>  3 COMMENTS</span></i>
-						<h6>Shop the Lock Cottage Country Living Room</h6>
-						<p>A small river named Duden flows by their place.</p>
-					</div>
+				</div>
+				<div class="blog-details">
+					<i class="fa fa-user"></i><span> ADMIN</span>
+					<i class="fa fa-calendar"></i><span>JAN 27,2021</span>
+					<i class="fa fa-comment"><span>  3 COMMENTS</span></i>
+					<h6>Shop the Lock Cottage Country Living Room</h6>
+					<p>A small river named Duden flows by their place.</p>
 				</div>
 			</div>
 		</div>
@@ -314,28 +335,34 @@
 		<div class="box">
 			<h6>Recent Posts</h6>
 			<div class="inner-box">
-				<img src="images/ximage_1.webp">
+				<div><img src="images/ximage_1.webp"></div>
 				<div class="blog-details">
 					<i class="fa fa-calendar"></i><span>JAN 27,2021</span>
 					<i class="fa fa-user"></i><span> ADMIN</span>
-					<h6>Shop the Lock Cottage Country Living Room</h6>
+					<h2>Shop the Lock Cottage Country Living Room</h2>
 				</div>
 			</div>
 			<div class="inner-box">
-				<img src="images/ximage_2.webp">
+				<div><img src="images/ximage_2.webp"></div>
 				<div class="blog-details">
 					<i class="fa fa-calendar"></i><span>JAN 27,2021</span>
 					<i class="fa fa-user"></i><span> ADMIN</span>
-					<h6>Shop the Lock Cottage Country Living Room</h6>
+					<h2>Shop the Lock Cottage Country Living Room</h2>
 				</div>
 			</div>
 		</div>
 		<div class="box">
 			<h6>Have a Question?</h6>
 			<div class="contact">
-				<p><i class="fa fa-map"></i>203 Fake St. Mountain View, San Francisco, California, USA</p>
-				<p><i class="fa fa-phone"></i>+2 392 3929 210</p>
-				<p><i class="fa fa-location-arrow"></i>info@yourdomain.com</p>
+				<div>
+					<i class="fa fa-map"></i><span>203 Fake St. Mountain View, San Francisco, California, USA</span>
+				</div>
+				<div>
+					<i class="fa fa-phone"></i><span>+2 392 3929 210</span>
+				</div>
+				<div>
+					<i class="fa fa-location-arrow"></i><span>info@yourdomain.com</span>
+				</div>
 			</div>
 		</div>
 	</div>
