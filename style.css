@@ -24,7 +24,7 @@ nav{
   z-index: 5;
   padding: 0;
   margin-left: 80px;
-  padding: 0 12px 0 12px;
+  padding: 0 12px;
   justify-content: space-between;
   align-items: center;
 }
@@ -79,11 +79,11 @@ nav{
   z-index: -1;
 }
 .header .img{
+  display: block;
   background-image: url(images/xbg_2.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 100vh;
   min-height: 100%;
   width: 50%;
   position: absolute;
@@ -189,6 +189,25 @@ nav{
     width: 60%;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .text-box{
+    padding-top: 25vh;
+  }
+}
+@media screen and (max-width: 450px) {
+  @media screen and (max-height: 400px){
+    .header{
+      height: 130vh;
+    }
+  }
+}
+@media screen and (max-height: 360px){
+  .text-box{
+    margin: 0;
+    width: 100%;
+  }
+}
 /*----------- Flex -----------*/
 .flex-container{
   display: flex;
@@ -259,13 +278,13 @@ nav{
 }
 /*-------------- About furnish ----------*/
 .about-furnish{
-  min-height: 100vh;
   display: block;
   background-image: url(images/xbg_4.webp);
   background-size: cover;
   background-position: center center;
   position: relative;
   width: 100%;
+  padding-bottom: 80px;
 }
 .top-padding{
   padding-top: 20%;
@@ -324,11 +343,6 @@ nav{
   }
   .play-button{
     padding-left: 20px;
-  }
-}
-@media screen and (max-width: 600px){
-  .about-furnish{
-    height: 80vh;
   }
 }
 /*---------- Furniture Collection---------*/
@@ -427,7 +441,7 @@ nav{
 
 .box .text{
   padding: 20px;
-  padding-top: 320px;
+  padding-top: 300px;
   position: relative;
   width: 100%;
   z-index: 2;
